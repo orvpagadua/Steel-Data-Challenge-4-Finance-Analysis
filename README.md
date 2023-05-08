@@ -133,6 +133,6 @@ WHERE State = 'NY';
 5. Which branch has the highest average account balance?
 6. Which customer has the highest current balance in their accounts?
 7. Which customer has made the most transactions in the Transactions table?
-8.Which branch has the highest total balance across all of its accounts?
+8. Which branch has the highest total balance across all of its accounts?
 9. Which customer has the highest total balance across all of their accounts, including savings and checking accounts?
 10. Which branch has the highest number of transactions in the Transactions table?
