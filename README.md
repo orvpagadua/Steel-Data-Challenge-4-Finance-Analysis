@@ -128,6 +128,12 @@ WHERE State = 'NY';
 `JohnDoe` and `JaneDoe`
 
 2. What is the total number of accounts in the Accounts table?
+```
+SELECT COUNT(AccountID)
+FROM Accounts a; 
+```
+`15`
+
 3. What is the total balance of all checking accounts?
 4. What is the total balance of all accounts associated with customers who live in Los Angeles?
 5. Which branch has the highest average account balance?
