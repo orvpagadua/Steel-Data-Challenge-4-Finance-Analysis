@@ -120,6 +120,13 @@ Answer the following questions
 Then write a LinkedIn post saying what you have learnt or enjoyed
 Make sure to tag @Steel Data and @Matthew Steel
 1. What are the names of all the customers who live in New York?
+```
+SELECT CONCAT (FirstName, LastName) AS Customers, City, State 
+FROM Customers c 
+WHERE State = 'NY';
+```
+`JohnDoe` and `JaneDoe`
+
 2. What is the total number of accounts in the Accounts table?
 3. What is the total balance of all checking accounts?
 4. What is the total balance of all accounts associated with customers who live in Los Angeles?
