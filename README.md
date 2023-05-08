@@ -2,6 +2,7 @@
 
 ![sql4](https://user-images.githubusercontent.com/122549893/236733676-923ff835-e29e-4098-a7ac-3e4587ff1b46.jpg)
 
+Link to the [Challenge](https://steeldata.org.uk/SQL4.html)
 # Challenge 4 - Finance Analysis
 ## Intro
 You are a Finance Analyst working for 'The Big Bank'
