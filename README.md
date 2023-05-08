@@ -135,6 +135,13 @@ FROM Accounts a;
 `15`
 
 3. What is the total balance of all checking accounts?
+```
+SELECT AccountType, SUM(Balance)
+FROM Accounts a 
+WHERE AccountType = 'Checking';
+```
+`31,000`
+
 4. What is the total balance of all accounts associated with customers who live in Los Angeles?
 5. Which branch has the highest average account balance?
 6. Which customer has the highest current balance in their accounts?
