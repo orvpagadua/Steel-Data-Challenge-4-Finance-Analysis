@@ -204,5 +204,11 @@ ORDER BY Total_Balance DESC;
 
 10. Which branch has the highest number of transactions in the Transactions table?
 ```
+SELECT COUNT(t.TransactionID) AS 'Total_Transactions', b.BranchName 
+FROM Transactions t 
+JOIN Accounts a ON a.AccountID =t.AccountID 
+JOIN Branches b ON b.BranchID = a.BranchID 
+GROUP BY b.BranchName
+ORDER BY Total_Transactions DESC;
 ```
-
+`Main`
