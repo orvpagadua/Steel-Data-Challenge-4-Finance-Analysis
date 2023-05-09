@@ -163,7 +163,13 @@ ORDER BY AVG(a.Balance) DESC;
 
 6. Which customer has the highest current balance in their accounts?
 ```
+SELECT CONCAT(FirstName, LastName) AS 'Customers', SUM(a.Balance) AS 'Total_Balance'
+FROM Customers c 
+JOIN Accounts a ON a.CustomerID = c.CustomerID
+GROUP BY Customers
+ORDER BY Total_Balance DESC;
 ```
+` Michael Lee`
 
 7. Which customer has made the most transactions in the Transactions table?
 ```
