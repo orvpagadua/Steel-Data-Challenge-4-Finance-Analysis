@@ -173,7 +173,14 @@ ORDER BY Total_Balance DESC;
 
 7. Which customer has made the most transactions in the Transactions table?
 ```
+SELECT CONCAT(FirstName,' ',LastName) AS 'Customers', COUNT(t.TransactionDate) AS 'No_of_Transactions'
+FROM Customers c 
+JOIN Accounts a ON a.CustomerID = c.CustomerID 
+JOIN Transactions t ON t.AccountID = a.AccountID 
+GROUP BY Customers
+ORDER BY No_of_Transactions DESC;
 ```
+`Jane Doe` and `Alice Johnson`
 
 8. Which branch has the highest total balance across all of its accounts?
 ```
