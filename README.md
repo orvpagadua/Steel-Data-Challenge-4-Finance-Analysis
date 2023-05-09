@@ -184,7 +184,13 @@ ORDER BY No_of_Transactions DESC;
 
 8. Which branch has the highest total balance across all of its accounts?
 ```
+SELECT b.BranchName, SUM(a.Balance) AS 'Total_Balance'  
+FROM Branches b 
+JOIN Accounts a ON a.BranchID = b.BranchID 
+GROUP BY BranchName
+ORDER BY Total_Balance DESC;
 ```
+`North Beach`
 
 9. Which customer has the highest total balance across all of their accounts, including savings and checking accounts?
 ```
