@@ -194,6 +194,15 @@ ORDER BY Total_Balance DESC;
 
 9. Which customer has the highest total balance across all of their accounts, including savings and checking accounts?
 ```
+SELECT CONCAT(FirstName,' ',LastName) AS 'Customers', SUM(A.Balance) AS 'Total_Balance' 
+FROM Customers c 
+JOIN Accounts a ON a.CustomerID = c.CustomerID 
+GROUP BY Customers
+ORDER BY Total_Balance DESC;
 ```
+` Michael Lee`
 
 10. Which branch has the highest number of transactions in the Transactions table?
+```
+```
+
